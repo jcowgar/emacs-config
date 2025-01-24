@@ -1,4 +1,4 @@
-;;; package-mood-line.el --- Configure mood-line  -*- lexical-binding: t; -*-
+;;; behavior-mode-line.el --- Configure the mode line  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023-2025  Jeremy Cowgar
 
@@ -22,25 +22,20 @@
 
 ;;; Code:
 
-(use-package mood-line
-  :ensure (mood-line :host github :repo "bruno-r2/mood-line")
-  :config
-  (mood-line-mode))
+(use-package doom-modeline
+  :custom
+  (doom-modeline-buffer-file-name-style 'relative-to-project)
+  (doom-modeline-percent-position nil)
+  (doom-modeline-buffer-encoding nil)
+  (doom-modeline-indent-info nil)
+  (doom-modeline-total-line-number nil)
+  (doom-modeline-mu4e t)
+  (doom-modeline-gnus nil)
+  (doom-modeline-battery nil)
+  (doom-modeline-vcs-max-length 32)
 
-;;(use-package doom-modeline
-;;  :custom
-;;  (doom-modeline-buffer-file-name-style 'relative-to-project)
-;;  (doom-modeline-percent-position nil)
-;;  (doom-modeline-buffer-encoding nil)
-;;  (doom-modeline-indent-info nil)
-;;  (doom-modeline-total-line-number nil)
-;;  (doom-modeline-mu4e t)
-;;  (doom-modeline-gnus nil)
-;;  (doom-modeline-battery nil)
-;;  (doom-modeline-vcs-max-length 32)
-;;
-;;  :init
-;;  (doom-modeline-mode 1))
+  :init
+  (doom-modeline-mode 1))
 
-(provide 'package-mood-line)
-;;; package-mood-line.el ends here
+(provide 'behavior-mode-line)
+;;; behavior-mode-line.el ends here

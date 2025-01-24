@@ -60,7 +60,8 @@
 ;; As for height, I use a 27" HiDPI 5k monitor. 55 gives me a
 ;; mostly full height window with my desired font and size.
 
-(push '(height . 55) default-frame-alist)
+
+(push '(height . 48) default-frame-alist)
 (push '(width . 95) default-frame-alist)
 
 ;; NOTE: this was copied from anothers' configuration. I am unsure of

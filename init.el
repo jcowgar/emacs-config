@@ -69,7 +69,8 @@
 ;; as soon as possible in the startup sequence.
 
 (require 'behavior-visual)
-(require 'package-mood-line)
+(require 'behavior-minibuf)
+(require 'behavior-mode-line)
 
 ;; Set up where our customization's are stored.
 
