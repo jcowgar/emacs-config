@@ -72,6 +72,7 @@
 (require 'behavior-minibuf)
 (require 'behavior-mode-line)
 (require 'behavior-git)
+(require 'app-denote)
 
 ;; Set up where our customization's are stored.
 
