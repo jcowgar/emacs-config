@@ -71,6 +71,7 @@
 (require 'behavior-visual)
 (require 'behavior-minibuf)
 (require 'behavior-mode-line)
+(require 'behavior-git)
 
 ;; Set up where our customization's are stored.
 
