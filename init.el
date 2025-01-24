@@ -32,8 +32,8 @@
 ;;             enhanced by vertico, marginalia, consult and orderless.
 ;;             Tomorrow, the minibuf may use some other completion
 ;;             framework that is newer and better. Another example is
-;;             behavior-lsp. Today I am using lsp-mode. Maybe tomorrow
-;;             I will use eglot or lsp-bridge. In the end the behavior
+;;             behavior-lsp. Today I am using eglot. Maybe tomorrow
+;;             I will use lsp-mode or lsp-bridge. In the end the behavior
 ;;             is an lsp interface.
 ;;
 ;;             A behavior can be swapped in and out with little effect
@@ -69,10 +69,18 @@
 ;; as soon as possible in the startup sequence.
 
 (require 'behavior-visual)
+
+;; 4. Everything else.
+
 (require 'behavior-minibuf)
 (require 'behavior-mode-line)
 (require 'behavior-git)
+(require 'behavior-lsp)
+(require 'behavior-treesit)
+
 (require 'app-denote)
+
+(require 'mode-c)
 
 ;; Set up where our customization's are stored.
 
