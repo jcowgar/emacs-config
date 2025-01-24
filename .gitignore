@@ -1,0 +1,31 @@
+# directories
+.cache/
+auto-save-list/
+auto-saves/
+devdocs/
+eln-cache/
+elpa/
+elpaca/
+eshell/
+local/
+transient/
+tree-sitter/
+.local/
+
+# files
+.lsp-session-v1
+history
+projects
+recentf
+session.*
+tramp
+eshell/history
+eshell/lastdir
+
+# Compiled Elisp files
+*.elc
+
+# Auto-save files
+*~
+\#*\#
+.#*

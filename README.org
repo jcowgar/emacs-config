@@ -1,0 +1,7 @@
+#+title: Jeremy's Emacs Configuration
+
+* Purpose
+
+Self installing, fast configuration for an opinionated programmer
+who spends most of their time in Elixir but loves being a polyglot
+(computer of course, not spoken).
