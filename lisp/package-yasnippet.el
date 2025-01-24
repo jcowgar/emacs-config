@@ -1,4 +1,4 @@
-;;; behavior-lsp.el --- Configure the LSP engine  -*- lexical-binding: t; -*-
+;;; package-yasnippet.el --- Configure Yasnippets  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023-2025  Jeremy Cowgar
 
@@ -22,14 +22,9 @@
 
 ;;; Code:
 
-;; (use-package jsonrpc)
+(use-package yasnippet
+  :config
+  (yas-global-mode 1))
 
-;; (use-package eldoc)
-(use-package eglot
-  :after yasnippet
-  :custom
-  (eglot-inlay-hints-mode t)
-  (eglot-events-buffer-size 0))
-
-(provide 'behavior-lsp)
-;;; behavior-lsp.el ends here
+(provide 'package-yasnippet)
+;;; package-yasnippet.el ends here

@@ -77,6 +77,9 @@
 (require 'behavior-git)
 (require 'behavior-lsp)
 (require 'behavior-treesit)
+(require 'behavior-completion)
+
+(require 'package-yasnippet)
 
 (require 'app-denote)
 
