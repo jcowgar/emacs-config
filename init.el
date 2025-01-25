@@ -80,6 +80,7 @@
 (require 'behavior-treesit)
 (require 'behavior-completion)
 (require 'behavior-navigation)
+(require 'behavior-finding)
 
 (require 'package-yasnippet)
 
