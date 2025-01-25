@@ -72,12 +72,14 @@
 
 ;; 4. Everything else.
 
+;; Behaviors
 (require 'behavior-minibuf)
 (require 'behavior-mode-line)
 (require 'behavior-git)
 (require 'behavior-lsp)
 (require 'behavior-treesit)
 (require 'behavior-completion)
+(require 'behavior-navigation)
 
 (require 'package-yasnippet)
 
