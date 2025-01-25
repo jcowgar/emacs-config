@@ -93,6 +93,7 @@
 ;; Modes
 (require 'mode-c)
 (require 'mode-elixir)
+(require 'mode-markdown)
 
 ;; Set up where our customization's are stored.
 
