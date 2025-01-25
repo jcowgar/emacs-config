@@ -22,6 +22,31 @@
 
 ;;; Code:
 
+(use-package fontaine
+  :demand t
+  :init
+  (fontaine-set-preset 'regular)
+
+  :custom
+  (fontaine-presets
+   '((tiny
+      :default-height 110)
+     (small
+      :default-height 130)
+     (regular)
+     (large
+      :default-height 180)
+     (huge
+      :default-height 200)
+     (berkeley
+      :default-family "Berkeley Mono")
+     (presentation
+      :default-height 220)
+     (t
+      :default-height 160
+      :default-family "Iosevka Jeremy Coding"
+      :variable-pitch-family "Iosevka Jeremy Writing"))))
+
 (use-package modus-themes
   :custom
   (modus-themes-italic-constructs t)

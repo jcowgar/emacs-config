@@ -29,8 +29,8 @@
   ;; is fixed but Aile and Etoile are variable width, but of similar
   ;; style. This allows for a beautiful representation of mixed font
   ;; files such as an Org file.
-  (default ((t (:family "Iosevka Jeremy Coding" :height 150))))
-  (variable-pitch ((t (:family "Iosevka Jeremy Coding" :height 150))))
+  ;;(default ((t (:family "Iosevka Jeremy Coding" :height 150))))
+  ;;(variable-pitch ((t (:family "Iosevka Jeremy Coding" :height 150))))
 
   :custom
   ;; We do not need the startup message.
