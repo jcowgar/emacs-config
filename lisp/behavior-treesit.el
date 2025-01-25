@@ -25,12 +25,10 @@
 (use-package treesit-auto
   :custom
   (treesit-auto-install 'prompt)
-  (treesit-auto-langs '(bash c cpp elixir go heex markdown python rust))
+  (treesit-auto-langs '(bash c cpp elixir go heex markdown nix python rust))
 
   :config
   (global-treesit-auto-mode))
 
 (provide 'behavior-treesit)
 ;;; behavior-treesit.el ends here
-
-

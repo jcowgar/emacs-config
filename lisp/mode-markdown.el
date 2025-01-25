@@ -22,7 +22,11 @@
 
 ;;; Code:
 
-(use-package markdown-mode)
+(use-package markdown-mode
+  :custom
+  (markdown-header-scaling t)
+  (markdown-header-scaling-values '(1.8 1.6 1.4 1.1 1.0 1.0))
+  (markdown-marginalize-headers nil))
 
 (provide 'mode-markdown)
 ;;; mode-markdown.el ends here
