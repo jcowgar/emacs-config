@@ -83,7 +83,9 @@
 (require 'behavior-finding)
 (require 'behavior-ai)
 
+;; Packages
 (require 'package-yasnippet)
+(require 'package-dirvish)
 
 (require 'app-denote)
 
