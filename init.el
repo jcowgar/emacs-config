@@ -81,6 +81,7 @@
 (require 'behavior-completion)
 (require 'behavior-navigation)
 (require 'behavior-finding)
+(require 'behavior-ai)
 
 (require 'package-yasnippet)
 
