@@ -26,7 +26,9 @@
 
 (use-package denote
   :hook (dired-mode . denote-dired-mode-in-directories)
-  :custom ((denote-directory (expand-file-name "~/Documents/denote"))
+  :custom ((denote-file-type 'markdown-yaml)
+	   (denote-file-type-prompt 'markdown-yaml)
+	   (denote-directory (expand-file-name "~/Documents/denote"))
 	   (denote-date-prompt-use-org-read-date t)
 	   (denote-dired-directories (list denote-directory
 					   (expand-file-name "amps" denote-directory)
