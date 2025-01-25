@@ -87,9 +87,12 @@
 (require 'package-yasnippet)
 (require 'package-dirvish)
 
+;; Applications
 (require 'app-denote)
 
+;; Modes
 (require 'mode-c)
+(require 'mode-elixir)
 
 ;; Set up where our customization's are stored.
 
