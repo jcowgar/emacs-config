@@ -1,4 +1,4 @@
-;;; behavior-treesit.el --- Configure the LSP engine  -*- lexical-binding: t; -*-
+;;; behavior-treesit.el --- Configure tree-sitter  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023-2025  Jeremy Cowgar
 
@@ -25,11 +25,12 @@
 (use-package treesit-auto
   :custom
   (treesit-auto-install 'prompt)
-  (treesit-auto-langs '(python rust go elixir c cpp bash))
+  (treesit-auto-langs '(bash c cpp elixir go heex markdown python rust))
 
   :config
   (global-treesit-auto-mode))
 
-
 (provide 'behavior-treesit)
 ;;; behavior-treesit.el ends here
+
+
