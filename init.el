@@ -82,6 +82,7 @@
 (require 'behavior-navigation)
 (require 'behavior-finding)
 (require 'behavior-ai)
+(require 'behavior-help)
 
 ;; Packages
 (require 'package-yasnippet)
