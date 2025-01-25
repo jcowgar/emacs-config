@@ -27,5 +27,9 @@
   :config
   (visual-replace-global-mode 1))
 
+(use-package expreg
+  :bind (("M--" . expreg-contract)
+	 ("M-=" . expreg-expand)))
+
 (provide 'behavior-finding)
 ;;; behavior-finding.el ends here
