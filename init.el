@@ -73,20 +73,20 @@
 ;; 4. Everything else.
 
 ;; Behaviors
+(require 'behavior-ai)
+(require 'behavior-completion)
+(require 'behavior-finding)
+(require 'behavior-git)
+(require 'behavior-help)
+(require 'behavior-lsp)
 (require 'behavior-minibuf)
 (require 'behavior-mode-line)
-(require 'behavior-git)
-(require 'behavior-lsp)
-(require 'behavior-treesit)
-(require 'behavior-completion)
 (require 'behavior-navigation)
-(require 'behavior-finding)
-(require 'behavior-ai)
-(require 'behavior-help)
+(require 'behavior-treesit)
 
 ;; Packages
-(require 'package-yasnippet)
 (require 'package-dirvish)
+(require 'package-yasnippet)
 
 ;; Applications
 (require 'app-denote)
