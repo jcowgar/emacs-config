@@ -1,4 +1,4 @@
-;;; mode-c.el --- Configure the LSP engine  -*- lexical-binding: t; -*-
+;;; mode-c.el --- Configure the C mode for my likings  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023-2025  Jeremy Cowgar
 
