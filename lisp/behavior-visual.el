@@ -39,13 +39,23 @@
      (huge
       :default-height 200)
      (berkeley
-      :default-family "Berkeley Mono")
+      :default-family "Berkeley Mono"
+      :default-width condensed
+      :variable-pitch-family "Berkeley Mono")
+     (input
+      :default-family "Input Mono Compressed"
+      :variable-pitch-family "Input Sans Compressed")
+     (iosevka
+      :default-family "Iosevka Jeremy Coding"
+      :variable-pitch-family "Iosevka Jeremy Writing")
      (presentation
       :default-height 220)
      (t
       :default-height 160
-      :default-family "Iosevka Jeremy Coding"
-      :variable-pitch-family "Iosevka Jeremy Writing"))))
+      :default-family "Berkeley Mono"
+      :default-width condensed
+      :variable-pitch-family "Berkeley Mono"
+      ))))
 
 (use-package modus-themes
   :custom
