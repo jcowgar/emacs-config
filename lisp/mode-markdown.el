@@ -24,6 +24,8 @@
 
 (use-package markdown-mode
   :custom
+  (markdown-fontify-code-blocks-natively t)
+  (markdown-hide-markup-in-view-modes t)
   (markdown-header-scaling t)
   (markdown-header-scaling-values '(1.8 1.6 1.4 1.1 1.0 1.0))
   (markdown-marginalize-headers nil))
