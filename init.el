@@ -95,6 +95,9 @@
 (require 'mode-c)
 (require 'mode-elixir)
 (require 'mode-markdown)
+(require 'mode-svelte)
+(require 'mode-typescript)
+(require 'mode-rust)
 
 ;; Set up where our customization's are stored.
 

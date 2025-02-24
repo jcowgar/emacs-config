@@ -1,4 +1,4 @@
-;;; behavior-treesit.el --- Configure tree-sitter  -*- lexical-binding: t; -*-
+;;; mode-svelte.el --- Configure the Svelte mode for my likings  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023-2025  Jeremy Cowgar
 
@@ -22,13 +22,23 @@
 
 ;;; Code:
 
-(use-package treesit-auto
-  :custom
-  (treesit-auto-install 'prompt)
-  (treesit-auto-langs '(bash c cpp elixir go heex javascript markdown nix python rust toml tsx typescript))
+;;(dolist (mode '(c-mode-hook c-ts-mode-hook c++-mode-hook c++-ts-mode-hook))
+;;  (add-hook mode 'eglot-ensure))
 
+(defun jc/svelte-mode ()
+  "Setup svelte mode how I like it"
+  (setq-local tab-width 4
+	      indent-tabs-mode t)
+  (eglot-ensure)
+
+  (add-hook 'before-save-hook #'eglot-format-buffer nil t))
+
+(use-package svelte-mode
+  :after eglot
   :config
-  (global-treesit-auto-mode))
+  (add-hook 'svelte-mode-hook 'jc/svelte-mode)
+  (add-to-list 'eglot-server-programs
+           '(svelte-mode . ("svelteserver" "--stdio"))))
 
-(provide 'behavior-treesit)
-;;; behavior-treesit.el ends here
+(provide 'mode-svelte)
+;;; mode-svelte.el ends here

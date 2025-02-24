@@ -1,4 +1,4 @@
-;;; behavior-treesit.el --- Configure tree-sitter  -*- lexical-binding: t; -*-
+;;; mode-rust.el --- Configure the Rust mode for my likings  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023-2025  Jeremy Cowgar
 
@@ -22,13 +22,20 @@
 
 ;;; Code:
 
-(use-package treesit-auto
-  :custom
-  (treesit-auto-install 'prompt)
-  (treesit-auto-langs '(bash c cpp elixir go heex javascript markdown nix python rust toml tsx typescript))
+(defun jc/rust-mode ()
+  "Setup Rust mode how I like it"
+  (eglot-ensure)
+  (add-hook 'before-save-hook #'eglot-format-buffer nil t))
 
-  :config
-  (global-treesit-auto-mode))
+(use-package rust-ts-mode
+  :ensure nil
+  :after eglot
+  :mode ("\\.rs" . rust-ts-mode)
+  :hook ((rust-ts-mode . jc/rust-mode)))
 
-(provide 'behavior-treesit)
-;;; behavior-treesit.el ends here
+(use-package toml-ts-mode
+  :ensure nil
+  :mode ("\\.toml" . rust-toml-mode))
+
+(provide 'mode-rust)
+;;; mode-rust.el ends here
