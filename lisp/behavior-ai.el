@@ -22,7 +22,26 @@
 
 ;;; Code:
 
-(use-package copilot-chat)
+(use-package copilot-chat
+  :config
+  (setq copilot-chat-model "claude-3.5-sonnet"))
+
+(use-package gptel
+  :ensure (:repo "karthink/gptel")
+  :config
+  ;; Github Models offers an OpenAI compatible API
+  (gptel-make-openai "Github Model:gpt-4o"
+    :host "models.inference.ai.azure.com"
+    :endpoint "/chat/completions"
+    :stream t
+    :key (getenv "AZURE_API_KEY")
+    :models '(gpt-4o))
+  (gptel-make-openai "Github Model:o3-mini"
+    :host "models.inference.ai.azure.com"
+    :endpoint "/chat/completions"
+    :stream t
+    :key (getenv "AZURE_API_KEY")
+    :models '(o3-mini)))
 
 (provide 'behavior-ai)
 ;;; behavior-ai.el ends here
